@@ -1,11 +1,10 @@
 site_name: Data Project
+
 site_url: https://www.devops4fun.com.br/
+
 repo_url: https://github.com/haroldoproenca/dataproject
+
 strict: true
-nav:
-  - Home: index.md
-  - API: api.md
-  - LinkedIn: linkedin.md
 
 theme:
   #custom_dir: overrides
@@ -31,7 +30,16 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+
 plugins:
   - search
   - mkdocstrings:
       default_handler: python
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - getting-started/extract.md
+    - getting-started/transform.md
+    - getting-started/load.md
+  - LinkedIn: linkedin.md

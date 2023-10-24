@@ -1,38 +1,9 @@
-# API Documentation
+# Load
 
 Abaixo, você encontrará detalhes sobre as funções e módulos do nosso projeto.
 
 ## Módulo `consolidador`
 
-### `extract`
-
-```python
-def extract(input_folder: str) -> list:
-    """
-    Função para extrair dados de arquivos Excel.
-
-    Args:
-        input_folder (str): Caminho da pasta contendo arquivos Excel.
-
-    Returns:
-        list: Lista contendo DataFrames do pandas.
-    """
-```
-
-### `transform`
-
-```python
-def transform(data: list) -> pd.DataFrame:
-    """
-    Função para transformar uma lista de DataFrames em um único DataFrame consolidado.
-
-    Args:
-        data (list): Lista contendo DataFrames para consolidação.
-
-    Returns:
-        DataFrame: DataFrame consolidado.
-    """
-```
 
 ### `load`
 
