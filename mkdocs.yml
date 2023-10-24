@@ -1,1 +1,37 @@
-site_name: My Docs
+site_name: Data Project
+site_url: https://www.devops4fun.com.br/
+repo_url: https://github.com/haroldoproenca/dataproject
+strict: true
+nav:
+  - Home: index.md
+  - API: api.md
+  - LinkedIn: linkedin.md
+
+theme:
+  #custom_dir: overrides
+  #favicon: assets/favicon.png
+  font:
+    text: Work Sans
+  #logo: assets/logo.png
+  name: material
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    primary: deep purple
+    scheme: default
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+  - media: '(prefers-color-scheme: dark)'
+    primary: orange
+    scheme: slate
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
