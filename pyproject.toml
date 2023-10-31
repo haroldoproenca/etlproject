@@ -21,6 +21,7 @@ mkdocstrings-python = "^1.7.3"
 pygments = "^2.16.1"
 mkdocs-material = "^9.4.6"
 pymdown-extensions = "^10.3.1"
+pylint = "^3.0.2"
 
 [build-system]
 requires = ["poetry-core"]
@@ -32,3 +33,6 @@ known_third_party = []
 
 [tool.taskipy.tasks]
 format = "isort . && blue ."
+
+[tool.pylint]
+jobs = "10"
