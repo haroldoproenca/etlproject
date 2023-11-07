@@ -32,8 +32,8 @@ Você deve ter o Python instalado em sua máquina. Este projeto foi desenvolvido
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/lvgalvao/dataprojectstarterkit.git
-cd dataprojectstarterkit
+git clone https://github.com/haroldoproenca/etlproject.git
+cd etlproject
 ```
 
 2. Instale as dependências do projeto usando [Poetry](https://python-poetry.org/docs/):
@@ -55,6 +55,4 @@ pytest
 ```
 ## Contato
 
-Para dúvidas, sugestões ou feedbacks:
-
-* **Luciano Filho** - [lvgalvaofilho@gmail.com](mailto:lvgalvaofilho@gmail.com)
+* **Haroldo Proença** - [haroldoproenca@gmail.com](mailto:haroldoproenca@gmail.com)
