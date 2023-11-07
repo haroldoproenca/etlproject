@@ -12,12 +12,12 @@ args: input_path (str): caminho da pasta com os arquivos
 return: lista de dataframes
 """
 
-path = '../../data/input'
+path = "../../data/input"
 
 
 def extract_from_excel(path: str) -> List[pd.DataFrame]:
-    """ teste"""
-    all_files = glob.glob(os.path.join(path, '*.xlsx'))
+    """teste"""
+    all_files = glob.glob(os.path.join(path, "*.xlsx"))
     data_frame_list = []
     for file in all_files:
         data_frame_list.append(pd.read_excel(file))
@@ -26,6 +26,6 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
 
 print(__name__)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     data_frame_list = extract_from_excel(path)
     print(data_frame_list)
