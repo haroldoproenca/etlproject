@@ -6,4 +6,4 @@ Abaixo, você encontrará detalhes sobre as funções e módulos do nosso projet
 
 ### `extract`
 
-### ::: etlproject.pipeline.extract.extract_from_excel
+### ::: etlproject.pipeline.extract.extract_dataframes_from_excel
