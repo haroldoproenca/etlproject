@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "dataproject"
+name = "etlproject"
 version = "0.1.0"
 description = "ETL Project"
 authors = ["Haroldo Proenca"]

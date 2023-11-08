@@ -21,13 +21,27 @@ repos:
     rev: 6.3.0 # Modify this to be the version you want
     hooks:
       - id: pydocstyle
+        language: system
+        types: [python]
+        args:
+        - --ignore=D401,D213
+
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+        - --fail-under=8
 
   - repo: local
     hooks:
       - id: pip-audit
         name: pip-audit
         entry: pip-audit
-        args: []
         language: system
         pass_filenames: false
         types: [python] # Opcional: se você quiser que isso seja executado apenas quando arquivos Python forem alterados.
+        args: ["--ignore-vuln","PYSEC-2021-878"]

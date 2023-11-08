@@ -1,31 +1,43 @@
+"""Module for extracting data from Excel files into pandas DataFrames."""
+
 import glob
 import os
 from typing import List
 
 import pandas as pd
 
-"""
-Função para ler os arquivos de uma pasta data/input e retornar uma lista de dataframes
-
-args: input_path (str): caminho da pasta com os arquivos
-
-return: lista de dataframes
-"""
-
-path = "../../data/input"
+# Constante para o caminho do diretório de entrada dos arquivos Excel.
+INPUT_PATH = "../../data/input"
 
 
-def extract_from_excel(path: str) -> List[pd.DataFrame]:
-    """teste"""
-    all_files = glob.glob(os.path.join(path, "*.xlsx"))
-    data_frame_list = []
-    for file in all_files:
-        data_frame_list.append(pd.read_excel(file))
-    return data_frame_list
+def extract_dataframes_from_excel(input_path: str) -> List[pd.DataFrame]:
+    """Read all Excel files.
 
+    Read all Excel files in a given directory and return a list of DataFrames.
 
-print(__name__)
+    Args:
+        input_path (str): The path to the directory containing Excel files.
+
+    Returns
+    -------
+        List[pd.DataFrame]: A list of DataFrames, each representing an Excel file.
+
+    """
+    # Constrói o caminho de busca e encontra todos os arquivos Excel no diretório.
+    excel_files = glob.glob(os.path.join(input_path, "*.xlsx"))
+    # Usa compreensão de lista para ler cada arquivo Excel e coletá-los em uma lista.
+    try:
+        data_frames = [pd.read_excel(file) for file in excel_files]
+    except Exception as e:
+        # Tratamento de exceções para lidar com erros ao ler os arquivos Excel.
+        print(f"An error occurred: {e}")
+        data_frames = []
+
+    return data_frames
+
 
 if __name__ == "__main__":
-    data_frame_list = extract_from_excel(path)
-    print(data_frame_list)
+    # Chama a função e imprime os DataFrames extraídos.
+    extracted_data_frames = extract_dataframes_from_excel(INPUT_PATH)
+    for df in extracted_data_frames:
+        print(df)

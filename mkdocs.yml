@@ -2,7 +2,7 @@ site_name: Data Project
 
 site_url: https://www.devops4fun.com.br/
 
-repo_url: https://github.com/haroldoproenca/dataproject
+repo_url: https://github.com/haroldoproenca/etlproject
 
 strict: true
 
