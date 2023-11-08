@@ -2,14 +2,9 @@ site_name: Data Project
 
 repo_url: https://github.com/haroldoproenca/etlproject
 
-strict: true
-
 theme:
-  #custom_dir: overrides
-  #favicon: assets/favicon.png
   font:
     text: Work Sans
-  #logo: assets/logo.png
   name: material
   palette:
   - media: '(prefers-color-scheme: light)'
@@ -28,12 +23,10 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
-
 plugins:
   - search
   - mkdocstrings:
       default_handler: python
-
 nav:
   - Home: index.md
   - Getting Started:
