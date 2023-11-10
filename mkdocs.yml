@@ -1,4 +1,4 @@
-site_name: Data Project
+site_name: ETL Project
 
 repo_url: https://github.com/haroldoproenca/etlproject
 
@@ -33,4 +33,4 @@ nav:
     - getting-started/extract.md
     - getting-started/transform.md
     - getting-started/load.md
-  - LinkedIn: linkedin.md
+  - Contato: contato.md

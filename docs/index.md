@@ -53,6 +53,3 @@ poetry shell
 ```bash
 pytest
 ```
-## Contato
-
-* **Haroldo Proença** - [haroldoproenca@gmail.com](mailto:haroldoproenca@gmail.com)
