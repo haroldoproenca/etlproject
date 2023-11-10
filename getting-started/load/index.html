@@ -20,7 +20,7 @@
     
     
       
-        <title>Load - Data Project</title>
+        <title>ETL Pipeline - Data Project</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#load" class="md-skip">
+        <a href="#etl-pipeline" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Load
+              ETL Pipeline
             
           </span>
         </div>
@@ -381,7 +381,7 @@
         
   
   <span class="md-ellipsis">
-    Extract
+    ETL Pipeline
   </span>
   
 
@@ -401,7 +401,7 @@
         
   
   <span class="md-ellipsis">
-    Transform
+    ETL Pipeline
   </span>
   
 
@@ -430,7 +430,7 @@
           
   
   <span class="md-ellipsis">
-    Load
+    ETL Pipeline
   </span>
   
 
@@ -441,7 +441,7 @@
         
   
   <span class="md-ellipsis">
-    Load
+    ETL Pipeline
   </span>
   
 
@@ -463,23 +463,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modulo-consolidador" class="md-nav__link">
-    Módulo consolidador
-  </a>
-  
-    <nav class="md-nav" aria-label="Módulo consolidador">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#load_1" class="md-nav__link">
-    load
+  <a href="#load" class="md-nav__link">
+    Load
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#etlproject.pipeline.load.save_dataframe_to_excel" class="md-nav__link">
+    save_dataframe_to_excel
+  </a>
+  
+    <nav class="md-nav" aria-label="save_dataframe_to_excel">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#consolidate_excels" class="md-nav__link">
-    consolidate_excels
+  <a href="#etlproject.pipeline.load.save_dataframe_to_excel--returns" class="md-nav__link">
+    Returns
   </a>
   
 </li>
@@ -551,23 +551,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modulo-consolidador" class="md-nav__link">
-    Módulo consolidador
-  </a>
-  
-    <nav class="md-nav" aria-label="Módulo consolidador">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#load_1" class="md-nav__link">
-    load
+  <a href="#load" class="md-nav__link">
+    Load
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#etlproject.pipeline.load.save_dataframe_to_excel" class="md-nav__link">
+    save_dataframe_to_excel
+  </a>
+  
+    <nav class="md-nav" aria-label="save_dataframe_to_excel">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#consolidate_excels" class="md-nav__link">
-    consolidate_excels
+  <a href="#etlproject.pipeline.load.save_dataframe_to_excel--returns" class="md-nav__link">
+    Returns
   </a>
   
 </li>
@@ -595,37 +595,133 @@
   
 
 
-<h1 id="load">Load</h1>
+<h1 id="etl-pipeline">ETL Pipeline</h1>
 <p>Abaixo, você encontrará detalhes sobre as funções e módulos do nosso projeto.</p>
-<h2 id="modulo-consolidador">Módulo <code>consolidador</code></h2>
-<h3 id="load_1"><code>load</code></h3>
-<pre><code class="language-python">def load(df: pd.DataFrame, output_folder: str, filename: str) -&gt; None:
-    &quot;&quot;&quot;
-    Função para carregar (ou salvar) um DataFrame em um arquivo Excel.
+<h3 id="load"><code>Load</code></h3>
 
-    Args:
-        df (pd.DataFrame): DataFrame a ser salvo.
-        output_folder (str): Diretório onde o arquivo será salvo.
-        filename (str): Nome do arquivo Excel.
 
-    Returns:
-        None
-    &quot;&quot;&quot;
+
+<div class="doc doc-object doc-function">
+
+
+
+<a id="etlproject.pipeline.load.save_dataframe_to_excel"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Save Dataframe.</p>
+<p>Save a given DataFrame to an Excel file.</p>
+
+
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>data_frame</code></td>
+          <td>
+                <code><span title="pandas.DataFrame">DataFrame</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>DataFrame to be saved to Excel.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>output_path</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Path where the Excel file will be saved.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>file_name</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Name of the Excel file to be saved.</p>
+            </div>
+          </td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+      <h4 id="etlproject.pipeline.load.save_dataframe_to_excel--returns">Returns</h4>
+<pre><code>NoReturn: This function does not return anything.
 </code></pre>
-<h3 id="consolidate_excels"><code>consolidate_excels</code></h3>
-<p>```python
-def consolidate_excels(input_folder: str, output_folder: str, filename: str) -&gt; None:
-    """
-    Função para consolidar múltiplos arquivos Excel em um único arquivo.</p>
-<pre><code>Args:
-    input_folder (str): Pasta contendo arquivos Excel.
-    output_folder (str): Pasta onde o arquivo consolidado será salvo.
-    filename (str): Nome do arquivo Excel consolidado.
 
-Returns:
-    None
-"""
-</code></pre>
+          <details class="quote">
+            <summary>Source code in <code>etlproject/pipeline/load.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">save_dataframe_to_excel</span><span class="p">(</span>
+    <span class="n">data_frame</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">NoReturn</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Save Dataframe.</span>
+
+<span class="sd">    Save a given DataFrame to an Excel file.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        data_frame (pd.DataFrame): DataFrame to be saved to Excel.</span>
+<span class="sd">        output_path (str): Path where the Excel file will be saved.</span>
+<span class="sd">        file_name (str): Name of the Excel file to be saved.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">        NoReturn: This function does not return anything.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">complete_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">.xlsx&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelWriter</span><span class="p">(</span><span class="n">complete_path</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s2">&quot;openpyxl&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">writer</span><span class="p">:</span>
+        <span class="n">data_frame</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File saved successfully.&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
 
 
 
