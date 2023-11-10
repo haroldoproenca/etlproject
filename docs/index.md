@@ -1,30 +1,58 @@
-# Doc 'Como estruturar um projeto do Zero'
+# ETL Project
 
-Este é um projeto exemplo dedicado a demonstrar práticas de refatoração. Neste espaço, você encontrará uma descrição aprofundada da ETL, instruções para instalação, respostas a perguntas frequentes e mais. Seja você um colaborador ou simplesmente alguém com interesse no projeto, esperamos que esta documentação lhe seja útil.
+## Sobre o Projeto
 
-Além disso, esta documentação pode ser integrada ao Confluence ou a uma intranet interna, facilitando o acesso e colaboração de todos os membros da equipe.
+Este repositório é uma parte integrante de estudos com ciências de dados. O projeto é inicial e simples, onde o foco é aplicar as melhores práticas que são geração de documentação, validações de códigos antes de commits, utilização de CI.
 
-## Seções
+### Abordagens:
 
-- [Doc 'Como estruturar um projeto do Zero'](#doc-como-estruturar-um-projeto-do-zero)
-  - [Seções](#seções)
-  - [Introdução](#introdução)
-  - [Guia de Instalação](#guia-de-instalação)
-  - [FAQ](#faq)
-  - [Contato](#contato)
+* **Estrutura do repositório**: Isso inclui a organização de diretórios, como o código-fonte, testes, documentação, entre outros.
 
-## Introdução
+* **Exemplo de ETL**: Vamos criar um projeto utilizando classes, módulos e boas práticas em um ETL.
 
-O objetivo deste projeto é demonstrar como técnicas de refatoração podem ser aplicadas para melhorar a qualidade do código, otimizar a performance e tornar o software mais manutenível. A refatoração é essencial para manter o código limpo e compreensível, permitindo que equipes mantenham uma alta velocidade de desenvolvimento ao longo do tempo.
+* **Familiarizar-se com ferramentas de desenvolvimento**: Utilizaremmos PIP e POETRY neste projeto.
 
-## Guia de Instalação
+* **Testes com Pytest**: Testes unitários e de integração, para garantir que seu código funcione como esperado.
 
-Aqui, você encontrará instruções detalhadas sobre como instalar e configurar o projeto em seu ambiente local. Seguir as instruções corretamente garante que você tenha uma experiência suave ao trabalhar no projeto.
+* **Versionamento com Git e GitHub**: Versionamentoo do projeto e uso o GitHub para colaboração e publicação.
 
-## FAQ
+* **Documentação com MKDocs**: Documentação com MKDocs e a publicação da documentação no GitHub Pages.
 
-Esta seção fornece respostas para perguntas frequentes. Se você tiver alguma dúvida que não está coberta aqui, sinta-se à vontade para entrar em contato.
+* **Automatização e CI/CD**: Configuração de rotinas de integração e entrega contínua para manter a qualidade do projeto.
 
+
+## Começando
+
+### Pré-requisitos
+
+Você deve ter o Python instalado em sua máquina. Este projeto foi desenvolvido utilizando Python 3.12, mas é compatível com versões desde a 3.11 até a 3.13.
+
+### Instalação e Configuração
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/haroldoproenca/etlproject.git
+cd etlproject
+```
+
+2. Instale as dependências do projeto usando [Poetry](https://python-poetry.org/docs/):
+
+```bash
+poetry install
+```
+
+3. Ative o ambiente virtual:
+
+```bash
+poetry shell
+```
+
+4. Execute os testes para garantir que tudo está funcionando como esperado:
+
+```bash
+pytest
+```
 ## Contato
 
-Para quaisquer dúvidas, feedbacks ou suporte relacionado ao projeto, você pode entrar em contato diretamente através do e-mail: [lvgalvaofilho@gmail.com](mailto:lvgalvaofilho@gmail.com). Estou sempre disposto a ajudar!
+* **Haroldo Proença** - [haroldoproenca@gmail.com](mailto:haroldoproenca@gmail.com)
